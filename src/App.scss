@@ -1,0 +1,45 @@
+.App {
+  background-color: #1f1b1b;
+  min-height: 100vh;
+  display: flex;
+
+  .content {
+    width: 980px;
+    margin: 24px auto;
+
+    .chip-bar {
+      display: flex;
+      gap: 12px;
+
+      button {
+        background-color: transparent;
+        border-radius: 12px;
+        padding: 4px 12px;
+        border: 1px solid gray;
+        color: gray;
+        cursor: pointer;
+
+        &.active {
+          color: #dddddd;
+          border-color: #dddddd;
+        }
+      }
+    }
+
+    h2 {
+      color: #f1dea7;
+      font-size: 60px;
+      .correct {
+        background-color: green;
+        color: #ffffff;
+      }
+      .incorrect {
+        background-color: red;
+        color: #ffffff;
+      }
+    }
+    input {
+      opacity: 0;
+    }
+  }
+}
